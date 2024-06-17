@@ -2,13 +2,13 @@
 <br />
 <div align="center">
   <a href="https://github.com/alekseyHunter/compose-tech-calculator">
-    <img src="https://ucarecdn.com/7d1bd7eb-58a3-46ac-ba0f-01cf757d3fb2/" alt="Logo">
+    <img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/d55/2c1/c04/d552c1c04532f675c6028313ddd4d5be.png" alt="Logo">
   </a>
 
 <h3 align="center">My Tech Calculator</h3>
 
   <p align="center">
-    An awesome mobile application for the company "My-my".
+    An awesome mobile application for the company "N".
     <br />
     <br />
     <a href="https://github.com/alekseyHunter/compose-tech-calculator">View Demo</a>
@@ -24,12 +24,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Product Name Screen Shot](https://ucarecdn.com/7d1bd7eb-58a3-46ac-ba0f-01cf757d3fb2/)
-
 A simple mobile application that solved many of the company's problems.
 
 Features:
-- Key indicators of company on one screen and advanced statistics of key indicators in one click
 - Userfrieldly UI
 - Multi-language support
 
@@ -64,14 +61,14 @@ Modern mobile applications use modern libraries, and therefore we use the best l
 # Demo
 
 ## Screens
-<img src="https://ucarecdn.com/75da5441-f722-43a1-8e48-255b7770192a/" width="49%"> <img src="https://ucarecdn.com/047a2cd9-3eb7-4f47-9818-725c1557c03e/" width="49%">
+<img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/f50/2b3/bc8/f502b3bc84ddb83efbc6bb29258cb5b1.png" width="100%">
 
 </br>
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add English language support
+- [ ] Add English language support
 - [ ] Add more screens
 - [ ] Multi-language Support
 
@@ -104,7 +101,7 @@ Don't forget to give the project a star! Thanks again!
 </br>
 
 ## Contact
-This application was created on the article ["Creating Android application on Compose"](https://stepik.org/a/138114)
+This application was created for the article ["Creating an Android application using Compose"](https://habr.com/ru/articles/798755/)
 
 
 

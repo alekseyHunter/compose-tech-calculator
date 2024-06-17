@@ -1,6 +1,8 @@
 package my.tech.calculator.ui.screens.home.models
 
-sealed class HomeEvent {
+import nmstu.youth.base.architecture.UiEvent
+
+sealed class HomeEvent : UiEvent {
     data class ChangeTheme(val newValue: Boolean) : HomeEvent()
     data class ChangeExpression(val newValue: ExpressionItem) : HomeEvent()
     data object CalculateExpression : HomeEvent()

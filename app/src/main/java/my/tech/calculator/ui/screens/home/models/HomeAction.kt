@@ -1,5 +1,7 @@
 package my.tech.calculator.ui.screens.home.models
 
-sealed class HomeAction {
+import nmstu.youth.base.architecture.UiAction
 
+sealed class HomeAction: UiAction {
+    data class ShowAlertDialog(val description: String) : HomeAction()
 }

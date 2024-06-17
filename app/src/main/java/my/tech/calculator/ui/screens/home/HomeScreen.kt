@@ -3,28 +3,31 @@ package my.tech.calculator.ui.screens.home
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import my.tech.calculator.ui.screens.home.models.HomeEvent
-import my.tech.calculator.ui.screens.home.models.HomeViewState
 import my.tech.calculator.ui.screens.home.views.HomeViewInit
 
 @Composable
-fun HomeScreen() {
+fun HomeScreen(viewModel: HomeViewModel) {
 
-    HomeViewInit(
-        viewState = HomeViewState(),
-        onChangeTheme = {
+    val viewState = viewModel.viewStates().collectAsState()
 
-        },
-        onChangeExpression = {
-
-        },
-        onCalculateExpression = {
-
-        },
-        onClearExpression = {
-
-        },
-        onRemoveLastSymbol = {
-
-        }
-    )
+    with(viewState.value) {
+        HomeViewInit(
+            viewState = this,
+            onChangeTheme = {
+                viewModel.obtainEvent(HomeEvent.ChangeTheme(it))
+            },
+            onChangeExpression = {
+                viewModel.obtainEvent(HomeEvent.ChangeExpression(it))
+            },
+            onCalculateExpression = {
+                viewModel.obtainEvent(HomeEvent.CalculateExpression)
+            },
+            onClearExpression = {
+                viewModel.obtainEvent(HomeEvent.ClearExpression)
+            },
+            onRemoveLastSymbol = {
+                viewModel.obtainEvent(HomeEvent.RemoveLastSymbol)
+            }
+        )
+    }
 }
